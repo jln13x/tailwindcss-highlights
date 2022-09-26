@@ -1,8 +1,10 @@
 import plugin from "tailwindcss/plugin";
 import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
-import path from "path";
 
 export = plugin(({ matchUtilities, addUtilities, theme }) => {
+  const highlightsUrl =
+    "https://raw.githubusercontent.com/jln13x/tailwindcss-highlights/main/highlights";
+
   addUtilities({
     ".highlight": {
       zIndex: "1",
@@ -10,7 +12,7 @@ export = plugin(({ matchUtilities, addUtilities, theme }) => {
       "--tw-highlight-color": "black",
       "--tw-highlight-spread-x": "0",
       "--tw-highlight-spread-y": "0",
-      "--tw-highlight-variant": "url(./highlights/1.svg)",
+      "--tw-highlight-variant": `url(${highlightsUrl}/1.svg)`,
 
       "&::after": {
         content: `""`,
@@ -43,7 +45,7 @@ export = plugin(({ matchUtilities, addUtilities, theme }) => {
     {
       "highlight-variant": (v) => {
         return {
-          "--tw-highlight-variant": `url(./highlights/${v}.svg)`,
+          "--tw-highlight-variant": `url(${highlightsUrl}/${v}.svg)`,
         };
       },
     },
