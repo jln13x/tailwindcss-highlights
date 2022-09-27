@@ -1,0 +1,65 @@
+---
+export interface Props {
+  variant: string;
+}
+
+const { variant } = Astro.props;
+
+const colors = [
+  "highlight-indigo-400",
+  "highlight-indigo-500",
+  "highlight-indigo-600",
+  "highlight-indigo-700",
+  "highlight-indigo-800",
+
+  "highlight-blue-400",
+  "highlight-blue-500",
+  "highlight-blue-600",
+  "highlight-blue-700",
+  "highlight-blue-800",
+
+  "highlight-red-400",
+  "highlight-red-500",
+  "highlight-red-600",
+  "highlight-red-700",
+  "highlight-red-800",
+
+  "highlight-amber-400",
+  "highlight-amber-500",
+  "highlight-amber-600",
+  "highlight-amber-700",
+  "highlight-amber-800",
+
+  "highlight-emerald-400",
+  "highlight-emerald-500",
+  "highlight-emerald-600",
+  "highlight-emerald-700",
+  "highlight-emerald-800",
+
+  "highlight-cyan-400",
+  "highlight-cyan-500",
+  "highlight-cyan-600",
+  "highlight-cyan-700",
+  "highlight-cyan-800",
+
+  "highlight-violet-400",
+  "highlight-violet-500",
+  "highlight-violet-600",
+  "highlight-violet-700",
+  "highlight-violet-800",
+
+  "highlight-rose-400",
+  "highlight-rose-500",
+  "highlight-rose-600",
+  "highlight-rose-700",
+  "highlight-rose-800",
+];
+
+const highlightColor = colors[Math.floor(Math.random() * colors.length)];
+---
+
+<p
+  class={`highlight text-white text-2xl sm:text-4xl ${highlightColor} ${variant}`}
+>
+  Variant {variant.split("-").pop()}
+</p>
