@@ -1,5 +1,7 @@
 # tailwindcss-highlights - A plugin for tailwindcss
 
+See it in Action 👉 [Preview](https://tailwindcss-highlights.hubatsch.dev/)
+
 This plugin adds utility classes to easily add highlights to your texts.
 
 ## Installation
@@ -35,7 +37,7 @@ To change the color of the highlight use `highlight-{color}`. All the colors fro
 </p>
 ```
 \
-You can choose from different kinds of variants with `highlight-variant-{value}`. The available variants can be found in the [highlights](highlights)-folder or use your own variant e.g. `highlight-variant-[url(./path/to/custom-variant.svg)]`
+You can choose from different kinds of variants with `highlight-variant-{value}`. Check out the available variants on the [Preview](https://tailwindcss-highlights.hubatsch.dev/) or use your own variant e.g. `highlight-variant-[url(./path/to/custom-variant.svg)]`.
 
 ```html
 <p class="highlight highlight-indigo-600 highlight-variant-7">
