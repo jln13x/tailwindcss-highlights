@@ -42,6 +42,7 @@ You can choose from different kinds of variants with `highlight-variant-{value}`
     Lorem Ipsum
 </p>
 ```
+Credits for some of the variants: [svgbox](https://svgbox.net/)
 
 \
 Use the `highlight-spread-`-Utility to make the highlight spread into some direction.
@@ -100,6 +101,5 @@ This plugin adds the highlight as `::after`-pseudo element so its possible to ad
     Lorem Ipsum
 </p>
 ```
-<br />
 
-Credits for some of the variants: [svgbox](https://svgbox.net/)
+Note: The owner of this repository is not with associated with the company Tailwind Labs Inc. This is just a plugin for [tailwindcss](https://tailwindcss.com/)
