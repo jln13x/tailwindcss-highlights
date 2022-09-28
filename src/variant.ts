@@ -33,5 +33,10 @@ export const defaultVariant = {
 };
 
 export const variantStyles = {
-  mask: "var(--tw-highlight-variant)",
+  "mask-image": "var(--tw-highlight-variant)",
+  "-webkit-mask-image": "var(--tw-highlight-variant)",
+  "mask-repeat": "no-repeat",
+  "-webkit-mask-repeat": "no-repeat",
+  "mask-size": "100% 100%",
+  "-webkit-mask-size": "100% 100%",
 };
