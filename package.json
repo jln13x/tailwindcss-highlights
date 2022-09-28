@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-highlights",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A tailwindcss plugin to add highlights to your text",
   "repository": "https://github.com/jln13x/tailwindcss-highlights",
   "keywords": [
