@@ -1,9 +1,10 @@
 ---
 export interface Props {
-  variant: string;
+  number: number;
+  size: number;
 }
 
-const { variant } = Astro.props;
+const { number, size } = Astro.props;
 
 const colors = [
   "highlight-indigo-400",
@@ -56,10 +57,17 @@ const colors = [
 ];
 
 const highlightColor = colors[Math.floor(Math.random() * colors.length)];
+
+const variant = `highlight-variant-${number}`;
 ---
 
-<p
-  class={`highlight text-white text-2xl sm:text-4xl ${highlightColor} ${variant}`}
->
-  Variant {variant.split("-").pop()}
-</p>
+<div>
+  <p
+    class={`highlight text-white text-2xl sm:text-4xl ${highlightColor} ${variant}`}
+  >
+    Variant {variant.split("-").pop()}
+  </p>
+  <p class="text-center text-xs mt-2 text-neutral-500">
+    Size: {Number(size / 1000).toFixed(2)} kB
+  </p>
+</div>
