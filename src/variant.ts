@@ -30,6 +30,7 @@ const getVariantValues = (amount: number) => {
 
 export const defaultVariant = {
   "--tw-highlight-color": "black",
+  "--tw-highlight-variant": `url(${highlightsUrl}/1.svg)`
 };
 
 export const variantStyles = {
