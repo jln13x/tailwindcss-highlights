@@ -1,6 +1,7 @@
 # tailwindcss-highlights - A plugin for tailwindcss
 
-See it in Action 👉 [Preview](https://tailwindcss-highlights.hubatsch.dev/)
+See it in Action 👉 [Preview](https://tailwindcss-highlights.hubatsch.dev/) or [Playground](https://play.tailwindcss.com/hM0gHS3erl)
+
 
 This plugin adds utility classes to easily add highlights to your texts.
 
