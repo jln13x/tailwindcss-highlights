@@ -8,7 +8,7 @@ This plugin adds utility classes to easily add highlights to your texts.
 
 To install the package, run
 
-    npm install tailwindcss-highlights
+    npm install -D tailwindcss-highlights
 
 Add the plugin to the `tailwind.config.js` file in:
 
