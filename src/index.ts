@@ -12,6 +12,7 @@ export = plugin((p) => {
     ".highlight": {
       isolation: "isolate",
       position: "relative",
+      "white-space": "nowrap",
       ...defaultColors,
       ...defaultSpreadValues,
       ...defaultVariant,
